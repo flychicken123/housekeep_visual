@@ -1,5 +1,16 @@
 $black: #010000;
 $white: #ffffff;
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transform: $e;
+  -moz-transform: $e;
+  transform: $e;
+}
 a {
   text-decoration: none;
   @include transition(0.4s ease-in-out);
@@ -11,15 +22,4 @@ a {
 }
 .container-fluid {
   line-height: 24px;
-}
-@mixin translateY($e) {
-  -webkit-transform: translateY($e);
-  -moz-transform: translateY($e);
-  transform: translate($e);
-}
-
-@mixin transition($e) {
-  -webkit-transform: transition($e);
-  -moz-transform: transition($e);
-  transform: transition($e);
 }
