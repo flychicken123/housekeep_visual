@@ -6,6 +6,8 @@ import Homepage from "./components/pages/homepage";
 import Login from "./components/auth/Login";
 import SignUp from "./components/auth/Register";
 import Profile from "./components/auth/profile";
+import Job from "./components/pages/job";
+import Order from "./components/pages/order";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./Assets/css/default.min.css";
 class App extends Component {
@@ -19,7 +21,8 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/sign" component={SignUp} />
           <Route exact path="/profile" component={Profile} />
-
+          <Route exact path="/job" component={Job} />
+          <Route exact path="/order" component={Order} />
           <Footer />
         </div>
       </Router>

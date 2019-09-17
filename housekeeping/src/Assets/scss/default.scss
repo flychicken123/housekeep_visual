@@ -55,10 +55,15 @@ body {
       position: relative;
       text-align: center;
       padding-top: 5%;
-      .btn {
-        margin-top: 10%;
-
+      .homeAction {
         position: relative;
+        margin-left: 10%;
+        .btn {
+          margin-top: 10%;
+          margin-right: 5%;
+          position: relative;
+          background-color: orange;
+        }
       }
     }
   }
