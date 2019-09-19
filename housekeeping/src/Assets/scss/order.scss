@@ -5,5 +5,24 @@ body {
     background-size: cover;
     height: 80vh;
     position: relative;
+    .form-1 {
+      margin-left: 10%;
+      display: table;
+      form {
+        background-color: white;
+        border: thin solid white;
+        width: 200%;
+        margin-top: 35%;
+        padding: 20%;
+        label {
+          display: block;
+        }
+        input {
+          width: 100%;
+          border: 1.5px solid #5a5858;
+          font-size: 150%;
+        }
+      }
+    }
   }
 }
